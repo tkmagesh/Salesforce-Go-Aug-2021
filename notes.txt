@@ -45,7 +45,7 @@ TED Talk
     "Paradox of Choice"
         - Barry Schwartz
 
-
+Install the "GO" Extension in VS Code, then:
 CMD + SHIFT + P
     GO: Install/update tools
     Select all the tools and click 'ok'
