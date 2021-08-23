@@ -89,3 +89,21 @@ Data Types
 
 programming constructs
     if else, for, switch case, break, continue, fallthrough
+
+
+Assignment-1
+    Build an interactive calculator
+
+    Print the following menu
+        1. Add
+        2. Subtract
+        3. Multiply
+        4. Divide
+        5. Exit
+
+    Keep displaying the menu until the user selects 5
+    If the user choice is between 1 and 4
+        Accepts 2 integers from the user
+        perform the calculation
+        print the result
+        display the menu
