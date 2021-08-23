@@ -107,3 +107,7 @@ Assignment-1
         perform the calculation
         print the result
         display the menu
+
+
+Functions
+    Variadic functions
