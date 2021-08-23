@@ -49,3 +49,5 @@ TED Talk
 CMD + SHIFT + P
     GO: Install/update tools
     Select all the tools and click 'ok'
+
+Modules > Packages > .go files
