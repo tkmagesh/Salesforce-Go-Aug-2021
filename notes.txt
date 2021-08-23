@@ -115,6 +115,7 @@ Functions
         functions as objects
             - functions can be assigned to variables
             - functions can be passed as arguments to other functions
+            - functions can be returned from other functions
 
 Global functions in golang
     https://pkg.go.dev/builtin@go1.17
