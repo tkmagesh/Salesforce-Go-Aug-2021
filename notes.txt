@@ -111,3 +111,12 @@ Assignment-1
 
 Functions
     Variadic functions
+
+Global functions in golang
+    https://pkg.go.dev/builtin@go1.17
+    
+    len (string, slice, array)
+    cap
+    append
+    make
+    close

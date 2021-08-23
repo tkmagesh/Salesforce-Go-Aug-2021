@@ -14,8 +14,13 @@ func main() {
 func sum(nos ...int) int {
 	/* nos => slice (array) of int */
 	var result int
-	for i := 0; i < len(nos); i++ {
-		result += nos[i]
+	/*
+		for i := 0; i < len(nos); i++ {
+			result += nos[i]
+		}
+	*/
+	for _, no := range nos {
+		result += no
 	}
 	return result
 }
