@@ -87,3 +87,5 @@ Data Types
     byte (alias for uint8)
     rune (alias for int32) (represent a unicode code point)
 
+programming constructs
+    if else, for, switch case, break, continue, fallthrough
