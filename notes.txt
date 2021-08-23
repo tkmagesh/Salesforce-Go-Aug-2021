@@ -5,3 +5,47 @@ Schedule
     Tea Break   : 3:00 PM (15 mins)
     Wind up     : 4:00 PM
 
+
+Why Golang?
+    1. Manage Memory
+    2. Concurrency (Simplified)
+    3. Functional
+
+    1. Better performance
+        - No runtime
+        - compiled
+        - on par with 'C' (without overhead of memory management)
+
+    2. Simplicity
+        - No classes (Only structs & functions)
+        - No inheritance (Only composition)
+        - No exceptions (Only error handling)
+        - No access modifiers
+        - No generics
+        - ONLY 25 keywords
+            package, func, var, type, struct, interface, return, if, else, switch, case, for, break, continue, bool, int, float, string, chan, map, slice, nil, true, false, go, select, fallthrough
+
+    3. Simplified Concurrency
+        - Builtin scheduler
+        - Concurrency features are built in the language
+            go keyword
+            chan datatype
+            <- operator
+            select, range constructs
+        - 2 KB of memory per goroutine
+        - thousands of goroutines can be scheduled in one OS thread
+
+
+http://golang.org
+http://code.visualstudio.com
+
+go version
+        
+TED Talk
+    "Paradox of Choice"
+        - Barry Schwartz
+
+
+CMD + SHIFT + P
+    GO: Install/update tools
+    Select all the tools and click 'ok'
