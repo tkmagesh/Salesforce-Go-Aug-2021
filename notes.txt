@@ -111,6 +111,9 @@ Assignment-1
 
 Functions
     Variadic functions
+    Higher Order functions
+        functions as objects
+            - functions can be assigned to variables
 
 Global functions in golang
     https://pkg.go.dev/builtin@go1.17
