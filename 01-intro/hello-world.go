@@ -2,7 +2,10 @@
 package main
 
 //import other packages
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 //package level types & variables
 
@@ -11,6 +14,7 @@ import "fmt"
 //main function
 func main() {
 	fmt.Println("Hello World!")
+	fmt.Println(os.Args)
 }
 
 //other functions

@@ -51,3 +51,39 @@ CMD + SHIFT + P
     Select all the tools and click 'ok'
 
 Modules > Packages > .go files
+
+To run a go program
+    go run <program_name.go>
+
+To compile a go program
+    go build <program_name.go>
+
+To customize the binary created during customization
+    go build -o <binary_name>  <program_name.go>
+
+
+Data Types
+    bool
+    string
+
+    int
+    int8
+    int16
+    int32
+    int64
+
+    uint
+    uint8
+    uint16
+    uint32
+    uint64
+
+    float32
+    float64
+
+    complex64 (real float32, imaginary float32)
+    complex128 (real float64, imaginary float64)
+
+    byte (alias for uint8)
+    rune (alias for int32) (represent a unicode code point)
+
