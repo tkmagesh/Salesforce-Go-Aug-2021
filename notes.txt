@@ -125,3 +125,12 @@ Global functions in golang
     append
     make
     close
+
+Assignment - 2
+    Create a function (counter) that increments a value by 1 everytime it is invoked
+        counter() // => 1
+        counter() // => 2
+        counter() // => 3
+        counter() // => 4
+
+    The outcome of the counter function should not be able to be influenced from outside
