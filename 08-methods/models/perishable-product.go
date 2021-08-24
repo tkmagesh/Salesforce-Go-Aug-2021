@@ -16,5 +16,5 @@ func NewPerishableProduct(id int, name string, units int, cost float64, category
 
 func (p PerishableProduct) Format() string {
 	//return fmt.Sprintf("Id = %d, Name = %s, Units = %d, Cost = %v, Category = %s, Expiry = %s", p.Id, p.Name, p.Units, p.Cost, p.Category, p.Expiry)
-	return fmt.Sprintf("%v, Expiry = %s", p.Product.Format(), p.Expiry)
+	return fmt.Sprintf("%v, Expiry = %s", p.Product, p.Expiry)
 }

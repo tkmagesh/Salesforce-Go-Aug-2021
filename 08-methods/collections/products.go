@@ -7,10 +7,11 @@ import (
 
 type Products []models.Product
 
-func (products Products) Format() string {
+//implementing the fmt.Stringer interface
+func (products Products) String() string {
 	result := ""
 	for _, p := range products {
-		result += fmt.Sprintf("%v\n", p.Format())
+		result += fmt.Sprintf("%v\n", p)
 	}
 	return result
 }

@@ -13,15 +13,15 @@ func main() {
 
 	fmt.Printf("Cost of %s is %v\n", product.Name, product.Cost)
 	fmt.Println("Before applying discount ")
-	fmt.Println(product.Format())
+	fmt.Println(product)
 	//applyDiscount(&product, 10)
 	product.ApplyDiscount(10)
 	fmt.Println("After applying discount ")
-	fmt.Println(product.Format())
+	fmt.Println(product)
 
 	banana := models.NewPerishableProduct(102, "Banana", 10, 2.00, "Fruit", "2 Days")
 	banana.ApplyDiscount(10)
-	fmt.Println(banana.Format())
+	fmt.Println(banana)
 
 	fmt.Println("Products")
 	fmt.Println("================================================================")
@@ -36,7 +36,7 @@ func main() {
 	}
 
 	marker := models.Product{103, "Marker", 50, 20, "Utencil"}
-	fmt.Println(products.Format())
+	fmt.Println(products)
 
 	fmt.Println("IndexOf")
 	fmt.Println("Index Of marker = ", products.IndexOf(marker))
@@ -53,12 +53,12 @@ func main() {
 	costlyProducts := products.Filter(func(p models.Product) bool {
 		return p.Cost > 100
 	})
-	fmt.Println(costlyProducts.Format())
+	fmt.Println(costlyProducts)
 
 	fmt.Println("All stationary products")
 	var stationaryProductPredicate func(models.Product) bool = func(p models.Product) bool {
 		return p.Category == "Stationary"
 	}
 	stationaryProducts := products.Filter(stationaryProductPredicate)
-	fmt.Println(stationaryProducts.Format())
+	fmt.Println(stationaryProducts)
 }
