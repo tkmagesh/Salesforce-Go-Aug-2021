@@ -165,3 +165,34 @@ Find the length of the word that occurs the most by size in the following string
 
     Output:
         The size of the word that occurs the most by size = 5 with number of occurances = 38
+
+
+Go Modules
+Modules > Packages > go files
+
+GO environment variables
+    go env
+
+PRE go 1.13
+    $GOPATH
+        pkg
+        bin
+        src
+            github.com
+                tkmagesh
+                    go-app-1
+                        main.go
+                            import "github.com/tkmagesh/go-app-1/pk1"
+                        pkg1
+                            pkg1.go
+
+                    go-app-2
+
+Create a go module
+    go mod int <module_name>
+
+To install a open source module
+    go get <module_name>
+
+To localize the dependencies in to the 'vendo' directory
+    go mod vendor
