@@ -134,3 +134,19 @@ Assignment - 2
         counter() // => 4
 
     The outcome of the counter function should not be able to be influenced from outside
+
+Collection Types
+    Array
+    Slice
+    Map
+
+    Array
+        Fixed size collection of data of the same type
+
+    Slice
+        Wrapper on an array
+        Varying size
+        The data should be of the same type
+
+    Map
+        Collection of Key-Value pairs
