@@ -164,4 +164,4 @@ Find the length of the word that occurs the most by size in the following string
     .
 
     Output:
-        The size of the word that occurs the most by size = 7 with number of occurances = 13
+        The size of the word that occurs the most by size = 5 with number of occurances = 38
