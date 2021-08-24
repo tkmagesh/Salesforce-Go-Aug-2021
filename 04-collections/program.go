@@ -134,4 +134,11 @@ func main() {
 		words := strings.Split(str, " ")
 		fmt.Println(len(words))
 	*/
+
+	addNewProduct("Stappler", 6, productRanks)
+	fmt.Println(productRanks)
+}
+
+func addNewProduct(name string, rank int, productRanks map[string]int) {
+	productRanks[name] = rank
 }
