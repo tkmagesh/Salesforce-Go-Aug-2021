@@ -196,3 +196,5 @@ To install a open source module
 
 To localize the dependencies in to the 'vendo' directory
     go mod vendor
+
+Structure & Interpretation of Computer Programs (book)
