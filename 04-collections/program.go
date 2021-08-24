@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	//Array
@@ -118,11 +120,18 @@ func main() {
 		fmt.Println("Printer is not ranked")
 	}
 
-	rankOfPrinter := productRanks["Printer"]
-	fmt.Println("Rank of Printer => ", rankOfPrinter)
+	rankOfPrinter, _ := productRanks["Printer"]
+	fmt.Println("Rank of Printer => ",
+		rankOfPrinter)
 
 	//Deleting a key-value pair
 	delete(productRanks, "Eraser")
 	fmt.Println("After deleting a key-value pair")
 	fmt.Println(productRanks)
+
+	/*
+		str := "This is a string"
+		words := strings.Split(str, " ")
+		fmt.Println(len(words))
+	*/
 }
