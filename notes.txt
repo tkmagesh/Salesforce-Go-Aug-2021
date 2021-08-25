@@ -214,3 +214,7 @@ Testing
 
     To generate the mocks
         mockery --all --keeptree
+
+    To run benchmars
+        go test ./... -bench=.
+        go test ./... -bench=. -benchtime=10s
