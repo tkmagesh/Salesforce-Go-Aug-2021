@@ -61,4 +61,20 @@ func main() {
 	}
 	stationaryProducts := products.Filter(stationaryProductPredicate)
 	fmt.Println(stationaryProducts)
+
+	fmt.Println("Sorting")
+	fmt.Println("Initial List")
+	fmt.Println(products)
+
+	fmt.Println("Default Sort")
+	products.Sort()
+	fmt.Println(products)
+
+	fmt.Println("Sort by name")
+	products.SortByName()
+	fmt.Println(products)
+
+	fmt.Println("Sort by cost")
+	products.SortByCost()
+	fmt.Println(products)
 }

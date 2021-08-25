@@ -3,6 +3,7 @@ package collections
 import (
 	"fmt"
 	"methods_demo/models"
+	"sort"
 )
 
 type Products []models.Product
@@ -60,4 +61,45 @@ func (products Products) All(predicate func(models.Product) bool) bool {
 		}
 	}
 	return true
+}
+
+//Sorting
+
+//"sort.Interface" implementation
+
+func (products Products) Len() int {
+	return len(products)
+}
+
+//compare the products by id
+func (products Products) Less(i, j int) bool {
+	return products[i].Id < products[j].Id
+}
+
+func (products Products) Swap(i, j int) {
+	products[i], products[j] = products[j], products[i]
+}
+
+func (products Products) Sort() {
+	sort.Sort(products)
+}
+
+//to sort by name
+type byName struct {
+	Products
+}
+
+func (products byName) Less(i, j int) bool {
+	return products.Products[i].Name < products.Products[j].Name
+}
+
+func (products Products) SortByName() {
+	sort.Sort(byName{products})
+}
+
+//to sort by cost
+func (products Products) SortByCost() {
+	sort.Slice(products, func(i, j int) bool {
+		return products[i].Cost < products[j].Cost
+	})
 }
