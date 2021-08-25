@@ -199,5 +199,4 @@ To localize the dependencies in to the 'vendo' directory
 
 Structure & Interpretation of Computer Programs (book)
 
-TO CONTINUE
-    interface{} type
+interface{} type
