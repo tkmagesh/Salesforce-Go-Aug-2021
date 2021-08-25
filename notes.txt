@@ -200,3 +200,17 @@ To localize the dependencies in to the 'vendo' directory
 Structure & Interpretation of Computer Programs (book)
 
 interface{} type
+
+
+Testing
+    To run the tests
+        go test ./...
+
+    Mocking library
+        github.com/stretchr/testify
+
+    tool for generating mocks
+        github.com/vektra/mockery
+
+    To generate the mocks
+        mockery --all --keeptree
