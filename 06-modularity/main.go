@@ -14,5 +14,4 @@ func main() {
 	fmt.Println(calc.OperationCount)
 
 	color.Red("Is 97 a prime number ? : %t\n", utils.IsPrime(97))
-
 }
