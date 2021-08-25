@@ -7,29 +7,30 @@ import (
 
 func main() {
 	c := make(chan int)
-	done := make(chan bool)
-	go fibonacci(c, done)
-	go func() {
-		for i := range c {
-			println(i)
-		}
-	}()
 
-	fmt.Println("Hit Enter to stop")
-	var input string
-	fmt.Scanln(&input)
-	done <- true
+	go fibonacci(c)
+	for i := range c {
+		println(i)
+	}
 	fmt.Println("Done")
 }
 
-func fibonacci(ch chan int, done chan bool) {
+func fibonacci(ch chan int) {
+
 	x, y := 1, 1
+	/* done := make(chan bool)
+	go func() {
+		time.Sleep(10 * time.Second)
+		done <- true
+	}() */
+	done := time.After(10 * time.Second)
 	for {
 		select {
 		case ch <- x:
 			time.Sleep(500 * time.Millisecond)
 			x, y = y, x+y
-		case <-done:
+		case t := <-done:
+			fmt.Println(t)
 			fmt.Println("Stopped")
 			close(ch)
 			return
